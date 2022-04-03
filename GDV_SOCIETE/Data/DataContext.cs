@@ -8,5 +8,6 @@ namespace GDV_SOCIETE.Data
         //manich yaser fahmetha partie athiya ? ! 
         public DbSet <Societe> societes { get; set; }
     }
+    
 }
  
