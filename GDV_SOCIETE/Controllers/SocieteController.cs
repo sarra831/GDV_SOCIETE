@@ -82,4 +82,25 @@ namespace GDV_SOCIETE.Controllers
         }   
 
     }
+    //Personel Securité 
+    public class Prs_SecController : ControllerBase
+    {
+        public DataContext Context { get; }
+
+
+        [HttpGet] // ActionResult List for the schemas down blow
+        public async Task<ActionResult<List<Prs_Sec>>> Get()
+        {
+            var perso = new List<Prs_Sec>
+            {
+                new Prs_Sec
+                {
+                    CartID = 123456789,
+                    Nom = "Abas",
+                    Prenom = "salah"
+                }
+            };
+            return Ok(perso);
+        }
+    }
 }

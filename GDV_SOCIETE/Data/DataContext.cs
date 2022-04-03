@@ -7,7 +7,9 @@ namespace GDV_SOCIETE.Data
         public DataContext(DbContextOptions<DataContext>options) :base(options) { }
         //manich yaser fahmetha partie athiya ? ! 
         public DbSet <Societe> societes { get; set; }
+        public DbSet <Prs_Sec> prs_securite { get; set; }
     }
+    
     
 }
  
