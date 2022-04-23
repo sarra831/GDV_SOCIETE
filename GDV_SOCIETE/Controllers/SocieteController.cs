@@ -83,7 +83,7 @@ namespace GDV_SOCIETE.Controllers
 
     }
     //Personel Securité 
-    public class Prs_SecController : ControllerBase
+    /*public class Prs_SecController : ControllerBase
     {
         public DataContext Context { get; }
 
@@ -102,5 +102,5 @@ namespace GDV_SOCIETE.Controllers
             };
             return Ok(perso);
         }
-    }
+    }*/ 
 }

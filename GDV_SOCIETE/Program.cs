@@ -10,6 +10,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 //cette ligne pour indiquer au programme que nous utilison SQLServer ' confguration de SQLServer et SQL connection 
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    
 }); 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
